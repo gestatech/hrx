@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="hrPersistenceUnit" transaction-type="JTA">
+        <jta-data-source>jdbc/HrDS</jta-data-source>
+        <class>be.gestatech.hr.ejb.domain.entity.Countries</class>
+        <class>be.gestatech.hr.ejb.domain.entity.Departments</class>
+        <class>be.gestatech.hr.ejb.domain.entity.Employees</class>
+        <class>be.gestatech.hr.ejb.domain.entity.Jobs</class>
+        <class>be.gestatech.hr.ejb.domain.entity.Locations</class>
+        <class>be.gestatech.hr.ejb.domain.entity.Regions</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        <properties>
+        </properties>
+    </persistence-unit>
+</persistence>
